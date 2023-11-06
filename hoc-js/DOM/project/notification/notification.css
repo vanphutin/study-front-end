@@ -1,0 +1,42 @@
+.notification {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    color: #000;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    animation: noti 4s forwards 1 linear;
+    display: flex;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.left img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@keyframes noti {
+    20%, 80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+.right .top {
+    font-weight: bold;
+}
+
+.right .bottom {
+    font-size: 12px;
+    margin-top: 5px;
+}

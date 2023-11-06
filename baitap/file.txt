@@ -1,0 +1,133 @@
+ ARRAY && OBJECT
+--------------------------------------------------------------------------------------------------------------------------
+const myArray = [
+  { name: "John", age: 30 },
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 35 },
+];
+Câu hỏi liên quan đến mảng đối tượng này:
+
+1. Lấy độ dài (số phần tử) của mảng `myArray`.
+2. Truy cập thông tin của phần tử đầu tiên trong mảng.
+3. Truy cập tuổi của phần tử thứ hai trong mảng.
+4. Thay đổi tuổi của phần tử thứ ba trong mảng thành 40.
+5. Thêm một đối tượng mới vào mảng với tên là "Eve" và tuổi là 28.
+6. Xóa phần tử thứ hai khỏi mảng.
+7. Lấy danh sách tất cả các tên trong mảng thành một mảng riêng biệt.
+8. Kiểm tra xem tên "Alice" có tồn tại trong mảng không.
+9. Tìm phần tử có tuổi lớn nhất trong mảng.
+10. Sắp xếp mảng theo tuổi từ lớn đến nhỏ.
+-----------------------------------------------------------------------------------------
+Tiếp theo, bạn có thể tạo một đối tượng chứa một mảng
+const myObject = {
+  students: [
+    { name: "Sarah", grade: 85 },
+    { name: "Tom", grade: 92 },
+    { name: "Emily", grade: 78 },
+  ],
+};
+
+Câu hỏi liên quan đến đối tượng này:
+
+11. Lấy độ dài (số phần tử) của mảng `students` trong đối tượng `myObject`.
+12. Truy cập thông tin của sinh viên đầu tiên trong mảng `students`.
+13. Truy cập điểm của sinh viên thứ hai trong mảng `students`.
+14. Thay đổi điểm của sinh viên thứ ba trong mảng `students` thành 88.
+15. Thêm một đối tượng sinh viên mới vào mảng `students` với tên là "Peter" và điểm là 95.
+16. Xóa sinh viên đầu tiên khỏi mảng `students`.
+17. Lấy danh sách tất cả các tên sinh viên trong mảng `students` thành một mảng riêng biệt.
+18. Tính điểm trung bình của tất cả các sinh viên trong mảng `students`.
+19. Tìm sinh viên có điểm cao nhất trong mảng `students`.
+20. Sắp xếp mảng `students` theo điểm từ cao đến thấp.
+-----------------------------------------------------------------------------------------
+Bài tập liên quan đến việc lồng mảng và đối tượng trong JavaScript:
+const nestedData = [
+  {
+    name: "John",
+    age: 30,
+    hobbies: ["Reading", "Cooking"],
+    address: {
+      street: "123 Main St",
+      city: "Cityville",
+    },
+  },
+  {
+    name: "Alice",
+    age: 25,
+    hobbies: ["Painting", "Traveling"],
+    address: {
+      street: "456 Elm St",
+      city: "Townsville",
+    },
+  },
+  {
+    name: "Bob",
+    age: 35,
+    hobbies: ["Hiking", "Photography"],
+    address: {
+      street: "789 Oak St",
+      city: "Villagetown",
+    },
+  },
+];
+Câu hỏi liên quan đến dữ liệu lồng nhau này:
+
+1. Truy cập tên của người thứ hai trong mảng `nestedData`.
+2. Truy cập địa chỉ (street) của người thứ ba trong mảng `nestedData`.
+3. Truy cập sở thích (hobbies) của người đầu tiên trong mảng `nestedData`.
+4. Thay đổi tên của người thứ ba trong mảng `nestedData` thành "Charlie".
+5. Thêm một sở thích mới "Swimming" vào danh sách sở thích của người thứ hai trong mảng `nestedData`.
+6. Truy cập thành phố (city) của địa chỉ của người thứ ba trong mảng `nestedData`.
+7. Thay đổi địa chỉ (street) của người thứ hai trong mảng `nestedData` thành "987 Maple St".
+8. Lấy danh sách tất cả các sở thích của tất cả các người trong mảng `nestedData` thành một mảng riêng biệt.
+9. Thêm một người mới vào mảng `nestedData` với tên là "Eve", tuổi là 28, không có sở thích và địa chỉ gồm street là "321 Pine St" và city là "Forestville".
+
+
+Dưới đây là 50 bài tập để rèn luyện và ghi nhớ các phương thức trong array, object và array object lồng nhau. Sau đó, tôi sẽ đưa ra các câu hỏi liên quan đến array object để bạn kiểm tra kiến thức của mình.
+
+
+
+--------------------------------------------------------------------------------------------
+**Phần 1: Array**
+
+8. Sử dụng phương thức `shift()` để loại bỏ phần tử đầu tiên khỏi mảng.
+9. Sử dụng phương thức `unshift()` để thêm một phần tử vào đầu mảng.
+10. Sử dụng phương thức `slice()` để tạo một bản sao của mảng ban đầu.
+11. Sử dụng phương thức `splice()` để loại bỏ và thêm phần tử vào mảng.
+12. Sử dụng phương thức `concat()` để nối hai mảng lại với nhau.
+13. Sử dụng phương thức `join()` để chuyển mảng thành một chuỗi.
+14. Sử dụng phương thức `indexOf()` để tìm vị trí của một phần tử trong mảng.
+15. Sử dụng phương thức `map()` để tạo một mảng mới dựa trên mảng ban đầu.
+
+**Phần 2: Object**
+16. Tạo một đối tượng rỗng.
+17. Tạo một đối tượng mô tả một người, bao gồm tên, tuổi và địa chỉ.
+18. Truy cập thuộc tính "tuổi" của đối tượng người.
+19. Thay đổi địa chỉ của đối tượng người.
+20. Sử dụng vòng lặp `for...in` để lặp qua tất cả các thuộc tính của đối tượng.
+21. Sử dụng phương thức `Object.keys()` để lấy danh sách các thuộc tính của đối tượng.
+22. Sử dụng phương thức `Object.values()` để lấy danh sách các giá trị của đối tượng.
+23. Sử dụng phương thức `Object.entries()` để lấy danh sách các cặp key-value của đối tượng.
+24. Tạo một phương thức trong đối tượng để in ra thông tin của người đó.
+25. Xóa một thuộc tính khỏi đối tượng.
+
+**Phần 3: Array Object lồng nhau**
+26. Tạo một mảng chứa các đối tượng người.
+27. Truy cập thông tin của người thứ 2 trong mảng đó.
+28. Thay đổi tuổi của người thứ 3 trong mảng đó.
+29. Sử dụng vòng lặp để in ra tên của tất cả các người trong mảng.
+30. Sử dụng phương thức `filter()` để lọc ra những người có tuổi dưới 30.
+31. Sử dụng phương thức `map()` để tạo một mảng mới chứa tên của tất cả các người.
+32. Sử dụng phương thức `forEach()` để in ra thông tin của tất cả các người.
+33. Sử dụng phương thức `find()` để tìm người có tuổi là 25.
+34. Sử dụng phương thức `sort()` để sắp xếp các người theo tuổi tăng dần.
+35. Sử dụng phương thức `reduce()` để tính tổng tuổi của tất cả các người.
+
+**Câu hỏi liên quan đến Array Object:**
+36. Làm thế nào để thêm một đối tượng vào mảng?
+37. Làm thế nào để xóa một đối tượng khỏi mảng?
+38. Cách sử dụng phương thức `find()` trong mảng đối tượng?
+39. Cách sử dụng phương thức `filter()` trong mảng đối tượng?
+40. Cách sử dụng vòng lặp để lặp qua các phần tử của mảng đối tượng?
+
+Hy vọng rằng các bài tập và câu hỏi này sẽ giúp bạn rèn luyện kiến thức về array, object và array object lồng nhau.

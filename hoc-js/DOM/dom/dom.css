@@ -1,0 +1,16 @@
+.is-active {
+    font-size: 20px;
+    font-weight: initial;
+    color: cyan;
+    
+}
+.menu{
+    display: flex;
+    list-style: none;
+    
+}
+.box{
+    width: 200px;
+    height: 500px;
+    border: 3px solid #000;
+}

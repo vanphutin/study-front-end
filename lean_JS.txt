@@ -1,0 +1,84 @@
+THAM TRỊ (value) ->> không bị tác động trong quá trình tính toán 
+    vd: let x = 10;
+        funcition thamTri(n){
+            n +=4;
+                console.log(n) //14
+        }
+    console.log(x) // 10 ->>khong bị tác động
+
+THAM CHIẾU (Reference) --> khi thay đổi đối tượng hay tác đông có thể làm thay đôi chúng
+    vd : let arr = [1, 2, 3];
+            function thamChieu(arrRef, value) {
+                arrRef.push(value);
+            }
+
+            thamChieu(arr, 4);
+            console.log(arr); // [1, 2, 3, 4] (biến được thay đổi) ->> bị tác động
+
+
+THAM SỐ (parameter) là một GIÁ TRỊ ĐẦU VÀO được ĐƯỢC TRUYỀN VÀO MỘT HÀM HOẶC 1 PHƯƠNG THỨC khi nó được gọi. 
+    Tham số giúp hàm NHẬN DỮ KIỆU BÊN NGOÀI  để thực hiện các xử lý cụ thể hoặc tính toán kết quả. 
+    Các tham số được ĐỊNH NGHĨA TRONG ĐÂU hàm và được sử dụng bên TRONG HÀM .
+    vd: function congHaiSo(a, b) {
+            let tong = a + b;
+            console.log(`Tổng của ${a} và ${b} là ${tong}`);
+        }
+
+        // Gọi hàm và truyền tham số
+        congHaiSo(5, 3); // Kết quả: Tổng của 5 và 3 là 8
+
+
+"=>" là toán tử mũi tên (arrow operator) để xác định HÀM KHÔNG TÊN (lambda function)
+
+Hàm callback (callback function) là MỘT HÀM được TRUYỀN VÀO MỘT HÀM KHÁC như một tham số và 
+ thường được gọi lại (tức là thực thi) bên trong hàm gọi nó. 
+ Callback function là một phần quan trọng của lập trình KHÔNG ĐỒNG BỘ (asynchronous programming) và 
+ thường được sử dụng để xử lý các sự kiện, gọi lại dữ liệu từ máy chủ, hoặc thực hiện các tác vụ bất đồng bộ khác
+    vd: function fetchDataFromServer(callback) {
+                // Giả lập việc gọi dữ liệu từ máy chủ
+            setTimeout(function() {
+                const data = { message: "Dữ liệu từ máy chủ" };
+                callback(data); // Gọi lại callback và truyền dữ liệu nhận được
+            }, 2000); // Đợi 2 giây để giả lập việc gọi máy chủ
+        }
+
+        function processData(data) {
+            console.log("Dữ liệu đã được xử lý:", data.message);
+        }
+
+        fetchDataFromServer(processData);
+        console.log("Đang thực hiện công việc khác...");
+
+Arrow function (hàm mũi tên) : () => {}, truyen tham so (parameter1,parameter2...) => {}
+typeof : kiem tra no la kieu du lieu gi: 
+    vd: console.log(typeof 43); ==> number 
+    vd2:    function hello(){
+                 console.log("hi");
+            }
+              console.log(typeof hello);//funcition
+
+Kiểu dữ liệu null (Null Type):
+    null: Biểu diễn giá trị không tồn tại hoặc không có giá trị.
+Kiểu dữ liệu không xác định (Undefined Type):
+    undefined: Biểu diễn biến chưa được gán giá trị hoặc thuộc tính không tồn tại.
+--------------------------------------------------------------------------------------------
+Booble:
+    js tu dong chuyen kieu du lieu 
+    :chuyen so sang chuoi -> .toString();
+    :chuyen chuoi sang so -> .parseint();
+    Truthy -> true; Falsy -> false(false, 0,-0,0n;"" '' ``,null,undefined,NaN,document.all)
+    Khong the so sanh object
+
+Object :
+    duyet object dung for (const key in object) {
+                            if (Object.hasOwnProperty.call(object, key)) {
+                             const element = object[key];
+        
+                             }
+                        }
+    duyet object dung [keys]
+
+Array :
+    [-ARRAY-] có thể có [  numbers(1..n), "string", kiểu booblen(true, false), object{...}  ] và có thể lồng nhau.
+    Array.isArray() kiem tra co phai la mang khong
+    CLONE Array : dung toan tu : "..." 3 cham
